@@ -1,0 +1,21 @@
+create DATABASE IESPS;
+CREATE TABLE pacientes(ID_paciente Int ,NOMBRE varchar(25),edad INT,tipo_sangre varchar(25));
+CREATE TABLE alumnos(ID_Alumno Int ,NOMBRE varchar(25),edad INT,sexo varchar(25));
+CREATE TABLE Clientes(ID_cliente ,NOMBRE varchar(25),edad INT,TELEFONO  varchar(25));
+CREATE TABLE jugadores(ID_jugador Int ,NOMBRE varchar(25),edad INT,tipo_sangre varchar(25));
+
+
+
+Utilizando el lenguaje de manipulación de datos realizar lo siguiente:
+• Insertar al menos dos registros a cada tabla
+INSERT INTO pacientes(ID_paciente,nombre,edad,tipo_sangre)
+VALUES(3456,"alondra",21,"o+")
+INSERT INTO alumnos(ID_Alumno,nombre,edad,sexo)
+VALUES(123,"alondra",21,"M")
+
+• Actualiza por lo menos un registro en dos tablas distintas.
+UPDATE  pacientes SET  nombre= Daniel where nombre= Luis;
+UPDATE  clientes SET  edad=18 where nombre= Oscar;
+
+• Elimina un registro
+DELETE FROM table where IDcliente = 123
